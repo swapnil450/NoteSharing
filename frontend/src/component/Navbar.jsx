@@ -153,7 +153,7 @@ const Navbar = () => {
         </Left>
         <Center>
         <Link to="/" style={{textDecoration:"none",color:"black"}}>
-          <Logo>NoteSharing</Logo>
+          <Logo>UNIFINDER</Logo>
           </Link>
         </Center>
         <Right>
@@ -161,7 +161,9 @@ const Navbar = () => {
             { 
              currentUser?
              <>
-             
+             <a href="http://localhost:3000" className="menu-view-profile">
+              View Services
+              </a>
              <Link to={"/profile/"+currentUser._id} style={{textDecoration:"none"}}>
              <MenuItem>
              <AccountCircle />
